@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Da Vinci</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="gridprincipal.css" rel="stylesheet">
+    <link rel="stylesheet" href="tarjetas.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+            <li><a href="#" class="nav-link px-2">Contactanos</a></li>
+            <li><a href="#" class="nav-link px-2">Reservar</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+    </header>
+</div>
+
+<!-- Oferta Gastronómica -->
+<section class="section py-5">
+    <h3 class="section-title text-center">Oferta Gastronómica</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Entradas')">
+                    <img src="images/food/croquetas.jpg" alt="Entradas" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Entradas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Platos Principales')">
+                    <img src="images/food/mignon.jpg" alt="Platos Principales" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Platos Principales</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Pizzas')">
+                    <img src="images/food/pizza.jpg" alt="Pizzas" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Pizzas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Postres')">
+                    <img src="images/food/dessert.jpg" alt="Postres" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Postres</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Coctéles')">
+                    <img src="images/food/margarita.jpg" alt="Coctéles" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Coctéles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="image-container" onclick="showMenu('Vinos')">
+                    <img src="images/food/wine.jpg" alt="Vinos" class="img-fluid">
+                    <div class="image-caption">
+                        <p>Vinos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal para mostrar el menú -->
+<div id="menuModal" class="menu-modal">
+    <div class="menu-modal-content">
+        <span class="close" onclick="closeMenu()">&times;</span>
+        <h2 id="menuTitle"></h2>
+        <img id="menuImage" src="" alt="Menu Image" class="img-fluid">
+    </div>
+</div>
+
+<section class="section py-5">
+    <h3 class="section-title text-center">¿Porque nosotros?</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card custom-card">
+                    <img src="images/food/croquetas.jpg" class="card-img-top" alt="Nostra Passione">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nostra Passione</h5>
+                        <p class="card-text">Ofrecemos una experiencia culinaria única, inspirada en la cultura italiana y la genialidad de Leonardo da Vinci.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card custom-card">
+                    <img src="images/food/mignon.jpg" class="card-img-top" alt="Nostro Sogno">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nostro Sogno</h5>
+                        <p class="card-text">Queremos ser el restaurante italiano más prestigioso de Cartagena, reconocido por nuestra calidad y dedicación.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card custom-card">
+                    <img src="images/food/pizza.jpg" class="card-img-top" alt="Nostra Essenza">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nostra Essenza</h5>
+                        <p class="card-text">Trabajamos con honestidad, pasión, respeto y creatividad, siempre honrando a Da Vinci y brindando un servicio excepcional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>Ristorante Da Vinci &copy; 2022</p>
+    </footer>
+</body>
+</html>
