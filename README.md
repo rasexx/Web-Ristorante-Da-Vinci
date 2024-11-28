@@ -1,4 +1,3 @@
-```markdown
 # Ristorante Da Vinci - Web 🍝
 
 ## 📖 Descripción del Proyecto
@@ -224,4 +223,3 @@ This project is under the MIT License.
 - Advanced modularization.
 - Improvement of state management for scalability.
 - Additional SEO optimization.
-```
