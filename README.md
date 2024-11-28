@@ -13,7 +13,7 @@ El proyecto Ristorante Da Vinci tiene como objetivo crear una presencia en líne
 Clona este repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/ristorante-da-vinci.git
+git clone https://github.com/rasexx/Web-Ristorante-Da-Vinci.git
 ```
 
 Navega al directorio del proyecto:
@@ -127,7 +127,7 @@ The Ristorante Da Vinci project aims to create an online presence for a restaura
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/ristorante-da-vinci.git
+git clone https://github.com/rasexx/Web-Ristorante-Da-Vinci.git
 ```
 
 Navigate to the project directory:
